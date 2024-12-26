@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "front-results": {
+        "front-achievements": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -17,7 +17,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/front-results",
+                        "outputPath": "dist/front-achievements",
                         "index": "src/index.html",
                         "browser": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -65,10 +65,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "front-results:build:production"
+                            "buildTarget": "front-achievements:build:production"
                         },
                         "development": {
-                            "buildTarget": "front-results:build:development"
+                            "buildTarget": "front-achievements:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
