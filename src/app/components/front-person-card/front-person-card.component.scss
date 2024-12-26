@@ -1,0 +1,34 @@
+:host {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    padding: 20px;
+    text-align: center;
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+p,
+span {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #bbb;
+}

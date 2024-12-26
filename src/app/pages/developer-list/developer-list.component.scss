@@ -1,0 +1,22 @@
+header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+    box-sizing: border-box;
+}
+
+header h1 {
+    margin: 0;
+    color: #bbb;
+    font-size: 24px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}

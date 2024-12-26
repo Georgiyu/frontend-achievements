@@ -1,0 +1,9 @@
+<header>
+    <h1>Frontend Team Achievements {{ DATE_SCHEME.year }}</h1>
+</header>
+
+<div class="cards">
+    @for (developer of DEVELOPERS; track developer) {
+        <front-person-card [developer]="developer"></front-person-card>
+    }
+</div>

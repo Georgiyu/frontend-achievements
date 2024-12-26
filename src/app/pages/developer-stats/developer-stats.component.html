@@ -1,0 +1,87 @@
+<div class="page">
+    <div class="commit-background"></div>
+
+    <div class="texts">
+        <div class="number pretty-text">
+            {{ gitLabApiService.commits().length }}
+        </div>
+        <div class="text">Коммитов ты сделал</div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="commit-background"></div>
+
+    @if (isCommitsReady) {
+        <div class="texts">
+            <!-- <div class="number">{{ gitLabApiService.commits().length }}</div> -->
+            <div class="text">
+                Первый коммит в уходящем году ты сделал
+                <p class="pretty-text">
+                    {{ gitLabApiService.commitStatistics.firstCommitDate }}
+                </p>
+                <br />
+                И назывался он😶‍🌫️
+                <p class="pretty-text">
+                    "{{ gitLabApiService.commitStatistics.firstCommitTitle }}"
+                </p>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="page">
+    <div class="merge-requests-background"></div>
+    <div class="texts">
+        <div class="text">Ты сделал очень много мержей😎</div>
+        <div class="number pretty-text">
+            {{ gitLabApiService.mergeRequests().length }}
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="merge-requests-background"></div>
+    <div class="texts">
+        <div class="number pretty-text">
+            {{ maxDiscussions }}
+        </div>
+        <div class="text">
+            Таково максимальное количество оставленных тебе тредов, но не
+            расстраивайся, все мы ошибаемся😏
+        </div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="my-comments-background"></div>
+    <div class="texts">
+        <div class="number pretty-text">
+            {{ gitLabApiService.approveEvents().length }}
+        </div>
+        <div class="text">Мержей ты апрувнул💪</div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="comments-left-background"></div>
+    <div class="texts">
+        <div class="number pretty-text">
+            {{ gitLabApiService.commentEvents().length }}
+        </div>
+        <div class="text">Комментов ты наоставлял🤬</div>
+    </div>
+</div>
+
+<div class="page">
+    <div class="resolved-issues-background"></div>
+    <div class="texts">
+        <div class="text">
+            Также вот настолько ты помог платформе стать лучше😮
+        </div>
+        <div class="number pretty-text">
+            {{ DevelopersCounOfIssuesMap.get(developer) }}
+        </div>
+        <div class="text">ошибок решилось благодаря тебе)</div>
+    </div>
+</div>
